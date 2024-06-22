@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="toggle-container">
+        <label for="dark-mode-toggle" class="switch-label">Dark Mode</label>
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="container">
+        <h1>Color Palette Generator</h1>
+        <div id="color-palette" class="color-palette">
+            <div class="color" id="color1"></div>
+            <div class="color" id="color2"></div>
+            <div class="color" id="color3"></div>
+            <div class="color" id="color4"></div>
+            <div class="color" id="color5"></div>
+        </div>
+        <div class="action-buttons">
+            <button id="copy-btn">Copy Hex</button>
+            <button id="lock-btn">Lock</button>
+        </div>
+        <button id="generate-btn">Generate Palette</button>
+        <button id="save-palette-btn">Save Palette</button>
+        <button id="shuffle-btn">Shuffle Palette</button>
+        <p>Click a color to select it</p>
+        <h2>Saved Palettes</h2>
+        <div id="saved-palettes" class="saved-palettes"></div>
+    </div>
+    <div id="notification" class="notification">Hex copied!</div>
+    <script src="script.js"></script>
+</body>
+</html>
